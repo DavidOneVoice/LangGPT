@@ -7,7 +7,7 @@ import { useState, useRef, useEffect } from "react";
 import LanguageDetect from "languagedetect";
 
 const lngDetector = new LanguageDetect();
-const HF_API_KEY = "";
+const HF_API_KEY = import.meta.env.VITE_HUGGINGFACE_API_KEY;
 
 const languageCodes = {
     English: "en",
